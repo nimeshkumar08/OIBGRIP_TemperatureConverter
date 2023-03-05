@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="heading">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div id="container">
+            <div class="input">
+                <label>Celsius</label><br>
+                <input type="number" value="0" id="cl" class="input1">
+            </div>
+            <div class="input">
+                <label>Fahrenheit</label><br>
+                <input type="number" value="32" id="fr" class="input1">
+            </div>
+            <div style="margin-top:2rem">
+                <button onclick="calculateTemp()" class="convert">CONVERT</button>
+                <button onclick="reset()" class="reset">RESET</button>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="result">RESULT :-</h2>
+                <textarea id="contains" class="text"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
